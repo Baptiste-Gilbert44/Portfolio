@@ -1,0 +1,90 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: black;
+}
+
+.header{
+    height: 100vh;
+    background-image: url(images/stephane-monnet-465Ft460FV0-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo-main{
+    width: 100px;
+    height: 97.12px;
+    border-radius: 50%;
+    background-color: rgba(100, 100, 100, 0.25);
+    padding: 7px;
+}
+
+.logo{
+    width: 100px;
+    height: 97.12px;
+    border-radius: 50%;
+    background-color: rgba(50, 50, 50, 0.25);
+    padding: 7px;
+}
+
+.navabar{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    gap: 30px;
+}
+
+a{
+    color: rgb(164, 224, 224);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+p, h1 {
+    color: white;
+}
+
+h1{
+    font-size: 4em;
+    font-family: serif;
+}
+
+p{
+    font-size: 1.5em;
+    letter-spacing: 5px;
+}
+
+.main-title{
+    text-align: center;
+    margin-top: 50vh;
+}
+
+.subtitle{
+    margin-top: 1em;
+    color: rgb(240, 240, 115);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #934f25;
+    border: 2px solid lightgray;
+    padding: 75px;
+    gap: 3.5em
+}
+
+.card-container{
+    justify-content: space-around;
+    display: flex;
+    background-color: #612604
+}
