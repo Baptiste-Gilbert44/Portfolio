@@ -17,12 +17,13 @@
 
     <!-- Vérifie si le mode sombre était activé lors de la dernière visite -->
     <script>
-    if (sessionStorage.getItem("mode") === "enable") {
-        document.addEventListener("DOMContentLoaded", () => {
-        document.body.classList.add("dark");
-        document.documentElement.classList.add("no-transition");
-    })
-    }
+    (function() {
+        const mode = sessionStorage.getItem("mode");
+        if (mode === "enable") {
+            document.write('<style>*{transition:none!important}</style>');
+            document.documentElement.classList.add("dark");
+        }
+    })();
     </script>
 
 </head>
