@@ -20,7 +20,7 @@
   }
 
 .no-transition * {
-    transition-property: none !important;
+    transition: none !important;
 }
 
 }
