@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Titre affiché dans l’onglet du navigateur -->
     <title>Portfolio</title>
+
+    <!-- Import des polices utilisées sur le site -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Rubik+Spray+Paint&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- Vérifie si le mode sombre était activé lors de la dernière visite -->
     <script>
     if (sessionStorage.getItem("mode") === "enable") {
         document.documentElement.classList.add("dark");
@@ -20,16 +27,24 @@
 
 <body>
 
+    <!-- En-tête de la page projet -->
     <header class="header">
         <nav class="navbar">
+
+            <!-- Logo principal du site -->
             <img class ="logo-main" src="images/logo.png" alt="logo">
+
+            <!-- Liens de navigation -->
             <div class="pages-lien-header">
                 <a href="index.html">Accueil</a>
                 <a class="page-actuel" href="project.html">Projet</a>
                 <a href="contact.html">Contact</a>
             </div>
 
+            <!-- Icône indiquant le mode clair/sombre -->
             <img id="dark-mode-image" src="images/sun.png" alt="light_mode">
+
+            <!-- Bouton pour activer/désactiver le mode sombre -->
             <label class="switch">
                 <input id="switcher" type="checkbox">
                 <div class="slider"></div>
@@ -39,8 +54,13 @@
 
     </header>
 
+    <!-- Contenu principal de la page projets -->
     <main class="main-projet">
+
+        <!-- Partie supérieure : compétences + lien GitHub -->
         <div class = "projet-top">
+
+            <!-- Description des compétences -->
             <div class = "competence">
                 <h2>Mes compétences</h2>
                 <p>Depuis mon arriver à l'IIM, j'ai beaucoup élargi mon domaine de compétence, que ce soit dans:
@@ -48,17 +68,24 @@
                 et celles où je performe le mieux selon moi, reste quand même tous ce qui touche au jeu vidéos, plus précisements 
                 le game programming, ainsi que la 3D. Mes domaines de prédilection tourne donc autour de VS code(C#, python, C++, HTML, CSS, JS), Unity et Blender.</p>
             </div>
+
+            <!-- Lien vers le profil GitHub -->
             <div class = "lien-git">
                 <img class="image-git" src="images/github.png" alt="github">
                 <a href="https://github.com/Baptiste-Gilbert44?tab=repositories" target="_blank"><button class="button">Projets Github</button></a>
             </div>
         </div>
 
+        <!-- Section dédiée aux projets de jeux vidéo -->
         <div class="projets">
             <h2>Jeu Vidéos</h2>
+
+            <!-- Vidéo de démonstration du projet Unity -->
             <video class="projet-exemple" autoplay muted loop>
                 <source src="video/unity.mp4" type="video/mp4">
             </video>
+
+            <!-- Description du projet Unity -->
             <div class="description">
                 <h2>Jeu Unity</h2>
                 <p>Dans le cadre des cours, Nous avions eu comme projet de crée de A à Z un jeu vidéo platformer en 2 dimensions, donc crée les assets, les animation du personnage
@@ -67,23 +94,37 @@
                 j'ai donc également adoré réalisé ce projet, et ait même obtenu la magnifique note de 19/20. C'est également l'un des premier jeu que je réalise entierement par moi même
                 sur Unity, et j'en suis donc plutôt fier.</p>
             </div>
+
+            <!-- Séparation visuelle -->
             <div class="section"></div>
+
+                <!-- Vidéo du projet Python -->
                 <video class="projet-exemple" autoplay muted loop>
                     <source src="video/Python.mp4" type="video/mp4">
                 </video>
+
+            <!-- Description du projet Python -->
             <div class="description">
                 <h2>Jeu Python</h2>
                 <p>Voici "The Cube" (et oui je sais... c'est pas très original comme nom), c'est un jeu que j'ai développé entierrement en Python quand j'étais en première, à l'aide de la bibliothèque
                 "Pyxel" qui est une bibliothèque python permettant de faire des jeu-video en pixel art. C'est donc le tout premier jeu vidéo vraiment fonctionnel que j'ai crée, et évidement, comme
                 tous jeu que l'on commence au Lycée, je ne l'ai jamais fini, mais j'en suis quand même très fier, et d'ailleur, si vous voulez le tester, il vous suffit de cliquer sur ce boutton:
                 </p>
+
+                <!-- Lien pour tester le jeu -->
                 <a href="The_Cube.html" target="_blank"><button class="button">Jouer 🎮</button></a>
            </div>
 
         </div>
+
+        <!-- Section dédiée aux projets 3D -->
         <div class="projets-3d">
             <h2>3 D</h2>
+
+            <!-- Image du projet Blender -->
             <img class="projet-exemple" src="images/blender_projet.png" alt="blender_mecha">
+
+            <!-- Description du projet Mecha -->
             <div class="description">
                 <h2>Mecha en Lego</h2>
                 <p>Voici ma toute première création sur Blender. Nous avions pour consignes de crée en 3D, à l'aide du logiciel Blender, un mecha en lego de notre choix. J'ai donc du apprendre comment
@@ -91,12 +132,18 @@
                 la 3D, je m'en suis sorti avec un résultat très satisfaisant, et la note de 18/20.
                 </p>
             </div>
+
             <div class="section"></div>
+
+            <!-- Vidéo et images des projets de texturing -->
             <video class="projet-exemple" autoplay muted loop>
                 <source src="video/texuting-lumiere.mp4" type="video/mp4">
             </video>
+
             <img class="projet-exemple" src="images/texuting-appart.png" alt="blender_appart">
             <img class="projet-exemple" src="images/texturing-fantasy.png" alt="blender_villa">
+
+            <!-- Description du travail de texturing -->
             <div class="description">
                 <h2>Texturing</h2>
                 <p>Pour ce devoir, on nous avait donné des différentes scènes blender non texturé: une bougie avec des yeux, une maison dans un style meideval, et une villa moderne. Nous avons donc dû
@@ -108,10 +155,15 @@
 
     </main>
 
+    <!-- Pied de page -->
     <footer class = "footer">
     <nav class="navbar">
+
+        <!-- Logo et signature -->
         <img class ="logo-main" src="images/logo.png" alt="logo">
         <p class="signature-footer">Baptiste Gilbert / Azertali</p>
+
+        <!-- Navigation du footer -->
         <div class="pages-lien-footer">
                 <a href="index.html">Accueil</a>
                 <a class="page-actuel" href="project.html">Projet</a>
@@ -120,6 +172,7 @@
     </nav>
     </footer>
 
+<!-- Script JavaScript principal -->
 <script src="main.js"></script>
 
 </body>

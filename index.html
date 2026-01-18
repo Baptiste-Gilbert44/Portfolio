@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Titre de la page affiché dans l'onglet -->
     <title>Portfolio</title>
+
+    <!-- Import des polices Google Fonts utilisées dans le site -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Rubik+Spray+Paint&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- Vérifie si le mode sombre était activé lors de la dernière visite -->
     <script>
     if (sessionStorage.getItem("mode") === "enable") {
         document.documentElement.classList.add("dark");
@@ -20,27 +27,40 @@
 
 <body>
 
+    <!-- En-tête principal contenant la navigation et la présentation -->
     <header class="header-index">
         <nav class="navbar">
+            <!-- Logo du site -->
             <img class ="logo-main" src="images/logo.png" alt="logo">
+
+            <!-- Liens de navigation vers les différentes pages -->
             <div class="pages-lien-header">
                 <a class="page-actuel" href="index.html">Accueil</a>
                 <a href="project.html">Projet</a>
                 <a href="contact.html">Contact</a>
             </div>
+
+            <!-- Icône indiquant l'état du mode clair/sombre -->
             <img id="dark-mode-image" src="images/sun.png" alt="light_mode">
+
+            <!-- Bouton pour activer/désactiver le mode sombre -->
             <label class="switch">
                 <input id="switcher" type="checkbox">
                 <div class="slider"></div>
             </label>
         </nav>
 
+        <!-- Éléments visuels d'arrière-plan -->
         <div class = "background"></div>
         <div class= "background-cover"></div>
+
+        <!-- Titre principal et sous-titre -->
         <div class="main-title">
             <h1>Baptiste Gilbert</h1>
             <p id="subtitle">Étudiant à l'IIM digital school.</p>
         </div>
+
+        <!-- Liste des réseaux sociaux -->
         <div class ="resaux-liste">
             <a href="https://github.com/Baptiste-Gilbert44" target="_blank"><img class="images-resaux" src="images/github.png" alt="github"></a>
             <a href="https://www.linkedin.com/in/baptiste-gilbert-80a3213a5/" target="_blank"><img class="images-resaux" src="images/Linkedin.png" alt="linkedin"></a>
@@ -51,14 +71,19 @@
 
     </header>
 
+    <!-- Contenu principal de la page d'accueil -->
     <main class="main-index">
 
+        <!-- Colonne gauche : présentation personnelle -->
         <div class="accueil-gauche">
             <div class="presentation">
                 <div class="title-presentation">
                     <h2>Qui suis-je ?</h2>
+                    <!-- Photo de profil -->
                     <img class="pfp" src="images/bongo-cat.jpg" alt="photo-profil">
                 </div>
+
+                <!-- Texte de présentation -->
                 <p>Yooo, moi c'est Baptiste Gilbert, ou Azertali sur internet, j'ai 18 ans et je suis actuellement 
                     en première année de bachelor, à IIM Digital school, à Nantes. Je suis passioné par l'informatique
                     depuis toujours, plus particulièrement par tous ce qui touche au dev et à la programmation.
@@ -69,6 +94,7 @@
                     cette école, dans l'espoir d'un jour, peut être, réalisé mon rêve de crée mon propre jeu.</p>
             </div>
 
+            <!-- Bloc invitant à prendre contact -->
             <div class="presentation-contact">
                 <h2>Me contacter</h2>
                 <p>Vous avez été impressioné par mes talents de développeur ou d'artiste 3D? Ça m'étonnerais .. Mais si c'est le cas, 
@@ -77,17 +103,22 @@
             </div>
         </div>
 
+        <!-- Colonne droite : liens vers projets et contact -->
         <div class="accueil-droite">
+
+            <!-- Aperçu et lien vers la page projets -->
             <div class="lien-projet">
                 <img class="image-projet" src="images/mecha.png" alt="blender_mecha">
                 <a href="project.html"><button class="button">Voir mes projets →</button></a>
             </div>
 
+            <!-- Description de la section projets -->
             <div class="presentation-projet">
                 <h2>Mes projet</h2>
                 <p>Si vous voulez voir par vous mêmes mes différents projets réalisé pendant mes études ou en autodidact, cliqué juste au dessus.</p>
             </div>
 
+            <!-- Aperçu et lien vers la page contact -->
             <div class="lien-contact">
                 <img class="image-contact" src="images/mail.png" alt="envelope_mail">
                 <a href="contact.html"><button class="button">Me contacter →</button></a>
@@ -97,11 +128,15 @@
 
     </main>
 
+    <!-- Pied de page avec rappel de navigation -->
     <footer class = "footer">
     <nav class="navbar">
         <img class ="logo-main" src="images/logo.png" alt="logo">
+
+        <!-- Signature personnelle -->
         <p class="signature-footer">Baptiste Gilbert / Azertali</p>
 
+        <!-- Liens de navigation du footer -->
         <div class="pages-lien-footer">
                 <a class="page-actuel" href="index.html">Accueil</a>
                 <a href="project.html">Projet</a>
@@ -112,8 +147,9 @@
 
     </footer>
 
+<!-- Script JavaScript principal du site -->
 <script src="main.js"></script>
 
 </body>
 
-</html> 
+</html>
