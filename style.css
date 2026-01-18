@@ -19,10 +19,7 @@
     width: 95%;
   }
 
-.no-transition{
-    -webkit-transition-property: none !important;
-    -moz-transition-property: none !important;
-    -o-transition-property: none !important;
+.no-transition * {
     transition-property: none !important;
 }
 
