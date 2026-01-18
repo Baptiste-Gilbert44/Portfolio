@@ -620,13 +620,13 @@ body.dark .competence{
 .projets{
     border-radius: 75px;
     border: 3px solid rgb(255, 194, 169);
-    height: 315vh;
+    height: 320vh;
     width: 97%;
     padding-top: 1%;
     padding-left: 3%;
     display: flex;
     flex-direction: column;
-    margin-top: 8%;
+    margin-top: 5%;
 }
 
 body.dark .projets{
@@ -684,6 +684,7 @@ body.dark .section{
 }
 
 .description button{
+    margin-top: 2%;
     margin-left: 42%;
 }
 
