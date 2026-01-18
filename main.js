@@ -11,11 +11,6 @@ if(mode === "enable"){
     icon.src = "images/moon.png"          // Affiche l'icône lune
 }
 
-// Une fois la page entièrement chargée, retire la classe qui désactive les transitions CSS
-window.addEventListener("load", () =>{
-    document.documentElement.classList.remove("no-transition")
-})
-
 // Écouteur d'événement sur le changement d'état du switch
 darkMode.addEventListener("change", function(){
 
