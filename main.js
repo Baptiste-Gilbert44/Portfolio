@@ -13,7 +13,7 @@ if(mode === "enable"){
 
 // Une fois la page entièrement chargée, retire la classe qui désactive les transitions CSS
 window.addEventListener("load", () =>{
-    page.classList.remove("no-transition")
+    document.documentElement.classList.remove("no-transition")
 })
 
 // Écouteur d'événement sur le changement d'état du switch
