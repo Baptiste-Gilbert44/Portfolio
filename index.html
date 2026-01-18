@@ -1,44 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Rubik+Spray+Paint&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script>
+    if (sessionStorage.getItem("mode") === "enable") {
+        document.documentElement.classList.add("dark");
+        document.documentElement.classList.add("no-transition");
+    }
+    </script>
+
 </head>
+
 <body>
-    <header class="header">
-        <nav class="navabar">
-            <a href="index.html">Page d'accueil</a>
-            <img class ="logo-main" src="images/Arena.png" alt="logo">
-            <a href="contact.html">Page de contact</a>
+
+    <header class="header-index">
+        <nav class="navbar">
+            <img class ="logo-main" src="images/logo.png" alt="logo">
+            <div class="pages-lien-header">
+                <a class="page-actuel" href="index.html">Accueil</a>
+                <a href="project.html">Projet</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <img id="dark-mode-image" src="images/sun.png" alt="light_mode">
+            <label class="switch">
+                <input id="switcher" type="checkbox">
+                <div class="slider"></div>
+            </label>
         </nav>
 
+        <div class = "background"></div>
+        <div class= "background-cover"></div>
         <div class="main-title">
-            <p>test</p>
             <h1>Baptiste Gilbert</h1>
-            <p class="subtitle">test test</p>
+            <p id="subtitle">Étudiant à l'IIM digital school.</p>
         </div>
-    </header>
-    <section class="card-container">
-        <div class="card">
-            <img class="logo" src="images/Arena.png" alt="Logo">
-            <p>MACHIN</p>
+        <div class ="resaux-liste">
+            <a href="https://github.com/Baptiste-Gilbert44" target="_blank"><img class="images-resaux" src="images/github.png" alt="github"></a>
+            <a href="https://www.linkedin.com/in/baptiste-gilbert-80a3213a5/" target="_blank"><img class="images-resaux" src="images/Linkedin.png" alt="linkedin"></a>
+            <a href="https://www.youtube.com/@azertali2928" target="_blank"><img class="images-resaux" src="images/youtube.png" alt="youtube"></a>
+            <a href="https://osu.ppy.sh/users/35904460" target="_blank"><img class="images-resaux" src="images/osu.png" alt="osu"></a>
         </div>
-        <div class="card">
-            <img class="logo" src="images/Arena.png" alt="Logo">
-            <p>MACHIN</p>
         </div>
-        <div class="card">
-            <img class="logo" src="images/Arena.png" alt="Logo">
-            <p>MACHIN</p>
-        </div>
-        <div class="card">
-            <img class="logo" src="images/Arena.png" alt="Logo">
-            <p>MACHIN</p>
-        </div>
-    </section>
 
-    <script src="main.js"></script>
+    </header>
+
+    <main class="main-index">
+
+        <div class="accueil-gauche">
+            <div class="presentation">
+                <div class="title-presentation">
+                    <h2>Qui suis-je ?</h2>
+                    <img class="pfp" src="images/bongo-cat.jpg" alt="photo-profil">
+                </div>
+                <p>Yooo, moi c'est Baptiste Gilbert, ou Azertali sur internet, j'ai 18 ans et je suis actuellement 
+                    en première année de bachelor, à IIM Digital school, à Nantes. Je suis passioné par l'informatique
+                    depuis toujours, plus particulièrement par tous ce qui touche au dev et à la programmation.
+                    Et je suis également un très grand fan, et joueur de jeux vidéos pendant mon temps libre, comme par 
+                    exemple le jeu de rythme osu!, qui tous les jours me vole un peu de temps que j'aurais pu utiliser pour trvaillé...
+                    Mon objectif dans ma vie professionnel serait donc de développé de toute pièce mon propre jeu vidéo 
+                    indépendant. Et c'est pour en apprendre d'avantage sur le Jeu vidéo que j'ai rejoint 
+                    cette école, dans l'espoir d'un jour, peut être, réalisé mon rêve de crée mon propre jeu.</p>
+            </div>
+
+            <div class="presentation-contact">
+                <h2>Me contacter</h2>
+                <p>Vous avez été impressioné par mes talents de développeur ou d'artiste 3D? Ça m'étonnerais .. Mais si c'est le cas, 
+                    ou si vous voulez simplement m'envoyer un message pour quelconque raisons, vous pouvez toujours me contacter via la 
+                    page contact en cliquant juste ici. ➔</p>
+            </div>
+        </div>
+
+        <div class="accueil-droite">
+            <div class="lien-projet">
+                <img class="image-projet" src="images/mecha.png" alt="blender_mecha">
+                <a href="project.html"><button class="button">Voir mes projets →</button></a>
+            </div>
+
+            <div class="presentation-projet">
+                <h2>Mes projet</h2>
+                <p>Si vous voulez voir par vous mêmes mes différents projets réalisé pendant mes études ou en autodidact, cliqué juste au dessus.</p>
+            </div>
+
+            <div class="lien-contact">
+                <img class="image-contact" src="images/mail.png" alt="envelope_mail">
+                <a href="contact.html"><button class="button">Me contacter →</button></a>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class = "footer">
+    <nav class="navbar">
+        <img class ="logo-main" src="images/logo.png" alt="logo">
+        <p class="signature-footer">Baptiste Gilbert / Azertali</p>
+
+        <div class="pages-lien-footer">
+                <a class="page-actuel" href="index.html">Accueil</a>
+                <a href="project.html">Projet</a>
+                <a href="contact.html">Contact</a>
+        </div>
+
+    </nav>
+
+    </footer>
+
+<script src="main.js"></script>
+
 </body>
+
 </html> 

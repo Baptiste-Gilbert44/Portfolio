@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Rubik+Spray+Paint&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+    if (sessionStorage.getItem("mode") === "enable") {
+        document.documentElement.classList.add("dark");
+        document.documentElement.classList.add("no-transition");
+    }
+    </script>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <img class ="logo-main" src="images/logo.png" alt="logo">
+            <div class="pages-lien-header">
+                <a href="index.html">Accueil</a>
+                <a class="page-actuel" href="project.html">Projet</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <img id="dark-mode-image" src="images/sun.png" alt="light_mode">
+            <label class="switch">
+                <input id="switcher" type="checkbox">
+                <div class="slider"></div>
+            </label>
+
+        </nav>
+
+    </header>
+
+    <main class="main-projet">
+        <div class = "projet-top">
+            <div class = "competence">
+                <h2>Mes compétences</h2>
+                <p>Depuis mon arriver à l'IIM, j'ai beaucoup élargi mon domaine de compétence, que ce soit dans:
+                le digital art, la 3D, le game design, l'audio visuel ou même le game art. Mais mes princpales compétences, 
+                et celles où je performe le mieux selon moi, reste quand même tous ce qui touche au jeu vidéos, plus précisements 
+                le game programming, ainsi que la 3D. Mes domaines de prédilection tourne donc autour de VS code(C#, python, C++, HTML, CSS, JS), Unity et Blender.</p>
+            </div>
+            <div class = "lien-git">
+                <img class="image-git" src="images/github.png" alt="github">
+                <a href="https://github.com/Baptiste-Gilbert44?tab=repositories" target="_blank"><button class="button">Projets Github</button></a>
+            </div>
+        </div>
+
+        <div class="projets">
+            <h2>Jeu Vidéos</h2>
+            <video class="projet-exemple" autoplay muted loop>
+                <source src="video/unity.mp4" type="video/mp4">
+            </video>
+            <div class="description">
+                <h2>Jeu Unity</h2>
+                <p>Dans le cadre des cours, Nous avions eu comme projet de crée de A à Z un jeu vidéo platformer en 2 dimensions, donc crée les assets, les animation du personnage
+                et bien entendu la programmation du jeu, et tous cela via un moteur de jeu vidéo très répendu: Unity. Comme vous pouvez le voir juste au dessus, J'ai décidé de faire 
+                un jeu en pixel art dans lequel on contrôle un robot dans un monde post-apocalyptique. Comme je l'ai déjà dit, j'adore tous ce qui touche à la création de jeu vidéo,
+                j'ai donc également adoré réalisé ce projet, et ait même obtenu la magnifique note de 19/20. C'est également l'un des premier jeu que je réalise entierement par moi même
+                sur Unity, et j'en suis donc plutôt fier.</p>
+            </div>
+            <div class="section"></div>
+                <video class="projet-exemple" autoplay muted loop>
+                    <source src="video/Python.mp4" type="video/mp4">
+                </video>
+            <div class="description">
+                <h2>Jeu Python</h2>
+                <p>Voici "The Cube" (et oui je sais... c'est pas très original comme nom), c'est un jeu que j'ai développé entierrement en Python quand j'étais en première, à l'aide de la bibliothèque
+                "Pyxel" qui est une bibliothèque python permettant de faire des jeu-video en pixel art. C'est donc le tout premier jeu vidéo vraiment fonctionnel que j'ai crée, et évidement, comme
+                tous jeu que l'on commence au Lycée, je ne l'ai jamais fini, mais j'en suis quand même très fier, et d'ailleur, si vous voulez le tester, il vous suffit de cliquer sur ce boutton:
+                </p>
+                <a href="The_Cube.html" target="_blank"><button class="button">Jouer 🎮</button></a>
+           </div>
+
+        </div>
+        <div class="projets-3d">
+            <h2>3 D</h2>
+            <img class="projet-exemple" src="images/blender_projet.png" alt="blender_mecha">
+            <div class="description">
+                <h2>Mecha en Lego</h2>
+                <p>Voici ma toute première création sur Blender. Nous avions pour consignes de crée en 3D, à l'aide du logiciel Blender, un mecha en lego de notre choix. J'ai donc du apprendre comment
+                fonctionne ce logiciel, et comment fonctionne la 3D en général. J'ai choisis de m'inspirer d'un mecha présent dans Cyberpunk 2077, le "Militech Cerberus", et même en découvrant totalement 
+                la 3D, je m'en suis sorti avec un résultat très satisfaisant, et la note de 18/20.
+                </p>
+            </div>
+            <div class="section"></div>
+            <video class="projet-exemple" autoplay muted loop>
+                <source src="video/texuting-lumiere.mp4" type="video/mp4">
+            </video>
+            <img class="projet-exemple" src="images/texuting-appart.png" alt="blender_appart">
+            <img class="projet-exemple" src="images/texturing-fantasy.png" alt="blender_villa">
+            <div class="description">
+                <h2>Texturing</h2>
+                <p>Pour ce devoir, on nous avait donné des différentes scènes blender non texturé: une bougie avec des yeux, une maison dans un style meideval, et une villa moderne. Nous avons donc dû
+                appliqué toutes les textures, les lumières et également rajouté quelque élements sur les scène de la maison et de la villa. Le texutring est très différents du projet 3D "classique" que 
+                nous avions réalisé sur le mecha en lego, car ici on doit réalisé nous même des matriaux particulier, comme le bois, le métal etc ...
+                </p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class = "footer">
+    <nav class="navbar">
+        <img class ="logo-main" src="images/logo.png" alt="logo">
+        <p class="signature-footer">Baptiste Gilbert / Azertali</p>
+        <div class="pages-lien-footer">
+                <a href="index.html">Accueil</a>
+                <a class="page-actuel" href="project.html">Projet</a>
+                <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    </footer>
+
+<script src="main.js"></script>
+
+</body>
+
+</html>
